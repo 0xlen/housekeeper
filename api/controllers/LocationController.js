@@ -17,6 +17,11 @@ module.exports = {
             if (err) return response.forbidden(err);
 
             // return response.json( data[0] );
+            response.locals.scripts = [
+                'http://underscorejs.org/underscore-min.js',
+                sails.getBaseurl() + '/js/zipcode/finder.jsx',
+                sails.getBaseurl() + '/js/zipcode/include.jsx',
+            ];
             return response.view('location/index',
                 {
                     zip: (data[0]) ? data[0].zip : '',

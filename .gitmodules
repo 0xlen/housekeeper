@@ -1,0 +1,3 @@
+[submodule "depends/zipcodetw"]
+	path = depends/zipcodetw
+	url = https://github.com/moskytw/zipcodetw

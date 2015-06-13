@@ -1,0 +1,115 @@
+html {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.container {
+    width: 1000px;
+}
+
+.container .main {
+    background: url('/images/hk01_03.gif') no-repeat;
+    min-width: 981px;
+    min-height: 362px;
+}
+
+.container .main #docker{
+    margin: 20px auto;
+    width: 800px;
+    padding-top: 45px;
+}
+
+.container .main #docker img{
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.container .main #adkeyin {
+    margin: 0 auto;
+    width: 318px;
+}
+
+.container .main #adkeyin input[type="text"]{
+    z-index: 5;
+    margin: 18px 0px 0px 58px;
+    padding-top: 0px;
+    width: 240px;
+    position: absolute;
+    background: transparent;
+    border: none;
+}
+
+
+.container .information {
+    width: 412px;
+    display: inline;
+}
+
+.container .information span{
+    display: inline;
+    z-index: 99;
+    position: absolute;
+    margin-left: 180px;
+    font-family: Caviar Dreams;
+    font-weight: normal;
+}
+
+.container .information span#levels {
+    color: darkgray;
+    font-size: 2.5em;
+    margin-top: 70px;
+}
+
+.container .information span#description {
+    padding: 2px;
+    margin-top: 125px;
+    color: gray;
+    font-size: 1.1em;
+}
+
+.container .information img#progress {
+    position: absolute;
+    z-index: 99;
+    padding-top: 234px;
+    padding-left: 60px;
+    height: 12px;
+    width: 266px;
+}
+
+.container .details {
+    width: 569px;
+    display: inline;
+}
+
+.footer {
+    margin-bottom: 10px;
+    font-family:'Caviar Dreams Bold';
+    font-weight:normal;
+}
+
+.footer .links {
+    position: relative;
+}
+
+.footer .links ul {
+    list-style-type: none;
+    float: left;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.footer .links li {
+    float: left;
+    padding: 5px;
+}
+
+.footer .links li a {
+    text-decoration: none;
+    color: rgb(127, 127, 127);
+}
+
+
+.footer .links img{
+    float: right;
+    margin-right: 0px;
+}

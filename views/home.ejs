@@ -7,19 +7,28 @@
 <div class="container">
     <div class="main">
         <div id="docker">
-            <a href="###"><img src="/images/air0.png" /></a>
-            <a href="###"><img src="/images/temp0.png" /></a>
-            <a href="###"><img src="/images/light0.png" /></a>
-            <a href="###"><img src="/images/humid0.png" /></a>
+            <img src="/images/air0.png" name="air" onhover="javascript:change(this, 'air1.png')";/>
+            <img src="/images/temp0.png" name="temp" />
+            <img src="/images/light0.png" name="light" />
+            <img src="/images/humid0.png" name="humid" />
         </div>
         <div id="adkeyin">
-            <input type="text" />
-            <img src="/images/adkeyin.png" />
+            <div id="container">
+                <form action="change">
+                    <div class="content">
+                        <img id="content-loader" src="/images/loading.gif">
+                    </div>
+                </form>
+            </div>
+            <!--
+                <input type="text" />
+                <img src="/images/adkeyin.png" />
+            -->
         </div>
     </div>
 <div>
 
-<div class="container">
+<div class="container" id="contain">
     <div class="information">
         <span id="levels">Danger</span>
         <span id="description">
@@ -29,7 +38,8 @@
         <img src="/images/hk01_05.gif">
     </div>
     <div class="details">
-        <img src="/images/hk01_06.gif">      
+        <!-- <img src="/images/hk01_06.gif"> -->
+        <span>No relative data</span>
     </div>
 </div>
 
@@ -42,3 +52,9 @@
         <img src="/images/copyright.jpg">
     </div>
 </div>
+
+<script>
+var zip = "<%= zip %>", address = "<%= address %>",
+    prog = 266;
+</script>
+

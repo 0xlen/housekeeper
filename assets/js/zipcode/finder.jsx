@@ -23,10 +23,10 @@ var Finder = window.Finder = function () {
 Finder.template = _.template(
     '<article class="finder">'+
         '<div class="address-with-zipcode-wrapper">'+
-            '<input class="address-with-zipcode" value="" name="zip">'+
+            '<input type="text" class="address-with-zipcode" value="' + zip + '" name="zip" disabled="disabled">'+
         '</div>'+
-        '<input class="address" placeholder="請在上面這欄輸入地址" value="" name="address">'+
-        '<input type="submit" />'+
+        '<input type="text" class="address" placeholder="請在這欄輸入地址" value="' + address + '" name="address">'+
+        '<img src="/images/adkeyin.png" />'+
     '</article>'
 );
 
